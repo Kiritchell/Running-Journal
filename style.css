@@ -1,0 +1,68 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+  transition-duration: 250ms;}
+
+@font-face {
+  font-family: 'neoclassical';
+  src: url('/neoclassical.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color:#f9f4ef;
+  color:#020826;
+  font-family: 'Montserrat', serif;
+  }
+
+.main-title{
+  transform:rotate(90deg);
+  opacity:.2;
+  position:absolute;
+  right:-45px;
+  bottom:55px;
+  font-size:1.5em;
+  font-family: 'neoclassical', serif;
+  }
+
+  header{
+    display: inline-flex;
+    width:100%;
+    justify-content: space-between;
+  }
+
+h4{display:inline-flex;
+  font-weight:900;
+}
+
+button,
+i,
+h4{margin:.5em;
+  padding:.5em;}
+
+i{margin-right:-.5em;}
+
+button{
+  border-radius: 10px;
+  border:2px solid #fffffe;
+  background-color: inherit;
+  font-weight:900;
+  font-family: 'Montserrat', serif;
+  letter-spacing: .5px;
+  cursor: pointer;
+  min-width: fit-content;
+
+}
+
+.unshown-link{text-decoration:none;
+color:inherit}
+
+
+
+
+  /*468px and below phone*/
+  @media (min-width:469px){
+
+  }
