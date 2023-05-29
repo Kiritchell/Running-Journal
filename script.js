@@ -1,16 +1,17 @@
-
-
 import { posts } from "/Running Posts.js";
 const polaroidTitle = document.querySelector('.polaroid-title')
 let journalFeed = document.querySelector('.feed')
 
 
-console.log(posts[0].polaroidtitle)
+document.addEventListener('click', function(e){
+console.log(e.target.id)
+})
+
 
 function render(){
 posts.forEach(function eachPost(post){
     journalFeed.innerHTML += `
-    <a href="${post.uuid}">
+    <a>
     <div class="post-wrapper">
         <div class="polaroid-frame">
           <div class="film">
@@ -24,9 +25,12 @@ posts.forEach(function eachPost(post){
       </div>
       </a>`
 
-    console.log(post)
 })
+
 }
+
+
+
 
 render()
 

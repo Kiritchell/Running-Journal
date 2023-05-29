@@ -34,6 +34,10 @@ body {
     justify-content: space-between;
   }
 
+  footer{
+    height:200px;
+  }
+
 h4{display:inline-flex;
   font-weight:900;
 }
@@ -71,7 +75,7 @@ main {
 
 .post-wrapper {
   flex: 0 0 300px; /* Adjust the width as needed */
-  margin: 30px; /* Add margin between the post wrappers */
+  margin: 40px; /* Add margin between the post wrappers */
 }
 
 .polaroid-frame{
