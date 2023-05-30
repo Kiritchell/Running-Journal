@@ -127,6 +127,41 @@ left:18.5px;
   font-family: 'Major Mono Display', monospace;
 }
 
+/*Post modal*/
+.post-modal{
+  margin:100px 50%;
+  width:300px;
+  height:500px;
+  border-radius: 20px;
+  background-color:#f9f4ef;
+  z-index: 100;
+  position:absolute;
+  text-align: center;
+  border:1px solid black;
+  display: none;
+  box-shadow: 10px 10px 15px 6px rgba(0, 0, 0, 0.3);
+}
+
+.show-modal{
+  display: block;
+}
+
+label{width:100%;
+display: block;
+padding:.5em 0em 0em 0em}
+
+input{width:80%;
+  text-align: center;
+  border-radius: 15px;
+  border: .5px solid black;
+  height:30px;
+  margin:.5em;
+  font-family:inherit;}
+
+#post-input{
+  height:190px;
+ align-items: start;
+}
 
   /*468px and below phone*/
   @media (min-width:469px){

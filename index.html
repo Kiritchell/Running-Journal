@@ -28,12 +28,44 @@
       <h4>Running Journal</h4>
     </div>
       <div>
-      <button>Home</button>
+      <button id="new-post">New Post</button>
       <button><a class="unshown-link" href="https://kiritchell.netlify.app/" target="_blank">About Me</a></button>
       </div>
     </header>
 
     <main class="feed">
+
+        <form  id="post-modal" class="post-modal">
+            <label for="name-input">Name</label>
+            <input
+            id="name-input"
+            type="text"
+            name="name"
+            ></input>
+            <label for="title-input">Title</label>
+            <input
+            id="title-input"
+            type="text"
+            name="title"
+            ></input>
+            <label for="category-input">Category</label>
+            <input
+            id="category-input"
+            type="text"
+            name="category"
+            ></input>
+            <label for="post-input">Post</label>
+            <input
+            placeholder="write your heart out"
+            id="post-input"
+            type="text"
+            name="post"
+            ></input>
+            <button
+            id="submit-btn"
+            type="submit"
+            >Submit Post</button>
+        </form>
 
     </main>
 

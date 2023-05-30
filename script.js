@@ -1,7 +1,7 @@
 import { posts } from "/Running Posts.js";
 const polaroidTitle = document.querySelector('.polaroid-title')
 let journalFeed = document.querySelector('.feed')
-
+const newPostButton = document.querySelector('#new-post');
 
 document.addEventListener('click', function(e){
 console.log(e.target.id)
@@ -9,6 +9,7 @@ console.log(e.target.id)
 
 
 function render(){
+
 posts.forEach(function eachPost(post){
     journalFeed.innerHTML += `
     <a>
@@ -24,14 +25,13 @@ posts.forEach(function eachPost(post){
         </div>
       </div>
       </a>`
-
 })
-
 }
-
-
-
 
 render()
 
+const postModal = document.querySelector('#post-modal');
 
+newPostButton.addEventListener('click', function() {
+  postModal.classList.toggle("show-modal")
+})
